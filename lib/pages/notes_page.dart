@@ -242,19 +242,18 @@ class _NotesPageState extends State<NotesPage> {
                                   themeModeProvider.isDarkTheme ? Colors.black : Colors.white,
                                   content: Column(mainAxisSize: MainAxisSize.min, children: [
                                     ListTile(
-                                        title: Text('确认将所有选中条目从收藏移出？', style: TextStyle(fontSize: 20)),
+                                        title: Text('すべての選択されたアイテムを削除しますか？', style: TextStyle(fontSize: 20)),
                                         contentPadding: EdgeInsets.only(left: 10, right: 10)),
                                     ButtonBar(children: <Widget>[
                                       TextButton(
-                                        child: Text('取消',
+                                        child: Text('キャンセル',
                                             style: TextStyle(fontSize: 18, color: themeModeProvider.isDarkTheme ? Colors.white : Colors.black)),
                                         onPressed: () {
                                           Navigator.pop(context);
                                         },
                                       ),
                                       TextButton(
-                                        child: Text('确定',
-                                            style: TextStyle(fontSize: 18, color: Colors.red)),
+                                        child: Text('確認', style: TextStyle(fontSize: 18, color: Colors.red)),
                                         onPressed: () {
                                           deleteAllSelectedItem();
                                           isEditing = false;

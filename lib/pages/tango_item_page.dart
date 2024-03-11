@@ -43,7 +43,7 @@ class _TangoItemPageState extends State<TangoItemPage> {
         ),
         actions: [
           Tooltip(
-            message: '添加到生词本',
+            message: 'お気に入り',
             child: Container(
               margin: EdgeInsets.only(right: 5),
               child: IconButton(
@@ -89,7 +89,7 @@ class _TangoItemPageState extends State<TangoItemPage> {
             ),
           ),
           Tooltip(
-            message: '查看网页',
+            message: 'ネットのページへ',
             child: Container(
               margin: EdgeInsets.only(right: 20),
               child: IconButton(

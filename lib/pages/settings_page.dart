@@ -127,11 +127,11 @@ class _SettingsPageState extends State<SettingsPage> {
                                                             color: Colors.green,
                                                             size: 20,
                                                           ),
-                                                          title: Text('数据源设置成功', style: TextStyle(fontSize: 20)),
+                                                          title: Text('データソースの設定が成功しました', style: TextStyle(fontSize: 20)),
                                                           contentPadding: EdgeInsets.only(left: 10, right: 10)),
                                                       ButtonBar(children: <Widget>[
                                                         TextButton(
-                                                          child: Text('确定',
+                                                          child: Text('確認',
                                                               style: TextStyle(fontSize: 18, color: Colors.blueAccent)),
                                                           onPressed: () {
                                                             Navigator.pop(context);
@@ -161,11 +161,11 @@ class _SettingsPageState extends State<SettingsPage> {
                                                             color: Colors.red,
                                                             size: 20,
                                                           ),
-                                                          title: Text('数据源错误或网络超时', style: TextStyle(fontSize: 20)),
+                                                          title: Text('データソースにエラーが発生しました', style: TextStyle(fontSize: 20)),
                                                           contentPadding: EdgeInsets.only(left: 10, right: 10)),
                                                       ButtonBar(children: <Widget>[
                                                         TextButton(
-                                                          child: Text('确定',
+                                                          child: Text('確認',
                                                               style: TextStyle(fontSize: 18, color: Colors.blueAccent)),
                                                           onPressed: () {
                                                             Navigator.pop(context);
@@ -176,7 +176,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                               });
                                         }
                                       } else {
-                                        errorText = '请输入以 http:// 或 https:// 开头的 URL';
+                                        errorText = 'http://またはhttps://で始まるURLを入力して';
                                         setState(() {});
                                       }
                                     },

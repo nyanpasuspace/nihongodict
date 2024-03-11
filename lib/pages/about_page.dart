@@ -101,8 +101,8 @@ class _AboutPageState extends State<AboutPage> {
           context: context,
           builder: (_) => AlertDialog(
             shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(4))),
-            title: Text("发现新版本"),
-            content: Text("立即前往下载？", style: TextStyle(fontSize: 18)),
+            title: Text("新版本の発見"),
+            content: Text("ダウンロードに行きますか？", style: TextStyle(fontSize: 18)),
             actions: <Widget>[
               TextButton(
                   child: Text('キャンセル', style: TextStyle(fontSize: 18, color: themeModeProvider.isDarkTheme ? Colors.white: Colors.black)),
@@ -131,8 +131,8 @@ class _AboutPageState extends State<AboutPage> {
           context: context,
           builder: (_) => AlertDialog(
             shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(4))),
-            title: Text("检查更新"),
-            content: Text("暂未发现新版本", style: TextStyle(fontSize: 18)),
+            title: Text("更新"),
+            content: Text("新しいバージョンは見つかりませんでした。", style: TextStyle(fontSize: 18)),
             actions: <Widget>[
               TextButton(
                   child: Text('確認', style: TextStyle(fontSize: 18, color: themeModeProvider.isDarkTheme ? Colors.white: Colors.black)),
@@ -194,7 +194,7 @@ class _AboutPageState extends State<AboutPage> {
                     margin: EdgeInsets.only(left: 15),
                     child: Icon(Icons.emoji_emotions),
                   ),
-                  title: Text('日本語辞典のソースコード', style: TextStyle(fontSize: 20)),
+                  title: Text('ソースコード', style: TextStyle(fontSize: 20)),
                   subtitle: Text('GitHub のリポジトリへ', style: TextStyle(fontSize: 14)),
                   minVerticalPadding: 10,
                   onTap: () {

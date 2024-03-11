@@ -210,9 +210,9 @@ class _HomePageState extends State<HomePage> {
                         contentPadding: EdgeInsets.only(left: 20, right: 20),
                         leading: Icon(Icons.travel_explore),
                         // 条目标题
-                        title: Text('没有找到' + query.toString(), overflow: TextOverflow.ellipsis, maxLines: 1),
+                        title: Text(query.toString() + "を見つけないでした", overflow: TextOverflow.ellipsis, maxLines: 1),
                         // 条目介绍
-                        subtitle: Text('点击网页搜索', overflow: TextOverflow.ellipsis, maxLines: 1),
+                        subtitle: Text('ウェブページ検索', overflow: TextOverflow.ellipsis, maxLines: 1),
                         onTap: () {
                           // 网页搜索
                           openURL(Uri.parse('https://www.google.com/search?q=' + query.toString()));
@@ -232,7 +232,7 @@ class _HomePageState extends State<HomePage> {
               }
             }
           )
-          : (historyList.isEmpty ? Container(child: Center(child: Text('搜索点什么吧～', style: TextStyle(fontSize: 20)))) : Column(
+          : (historyList.isEmpty ? Container(child: Center(child: Text('何か検索しましょう～', style: TextStyle(fontSize: 20)))) : Column(
           children: <Widget>[
             Container(
               height: 30,
@@ -244,7 +244,7 @@ class _HomePageState extends State<HomePage> {
                   Expanded(
                     child: Align(
                       alignment: Alignment.centerLeft,
-                      child: Text('历史记录', maxLines: 1, textAlign: TextAlign.left, style: TextStyle(fontSize: 15, color: Colors.white)),
+                      child: Text('履歴', maxLines: 1, textAlign: TextAlign.left, style: TextStyle(fontSize: 15, color: Colors.white)),
                     ),
                   ),
                   Container(

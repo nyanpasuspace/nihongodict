@@ -44,7 +44,7 @@ class _SavedItemPageState extends State<SavedItemPage> {
         ),
         actions: [
           Tooltip(
-            message: '添加到生词本',
+            message: 'お気に入り',
             child: Container(
               margin: EdgeInsets.only(right: 5),
               child: IconButton(
@@ -89,7 +89,7 @@ class _SavedItemPageState extends State<SavedItemPage> {
             ),
           ),
           Tooltip(
-              message: '查看网页',
+              message: 'ネットのぺージへ',
               child: Container(
                 margin: EdgeInsets.only(right: 20),
                 child: IconButton(
